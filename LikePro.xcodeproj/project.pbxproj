@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3ED14A1FE22062002BE79D /* ImgLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3ED1491FE22062002BE79D /* ImgLikeView.m */; };
 		5A4FFD561FE12CB40043106A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4FFD551FE12CB40043106A /* main.m */; };
 		5A4FFD591FE12CB40043106A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4FFD581FE12CB40043106A /* AppDelegate.m */; };
 		5A4FFD5C1FE12CB40043106A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4FFD5B1FE12CB40043106A /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A3ED1481FE22062002BE79D /* ImgLikeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgLikeView.h; sourceTree = "<group>"; };
+		5A3ED1491FE22062002BE79D /* ImgLikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgLikeView.m; sourceTree = "<group>"; };
 		5A4FFD511FE12CB40043106A /* LikePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4FFD551FE12CB40043106A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A4FFD571FE12CB40043106A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 			children = (
 				5A4FFD871FE132A10043106A /* BaseLikeView.h */,
 				5A4FFD881FE132A10043106A /* BaseLikeView.m */,
+				5A3ED1481FE22062002BE79D /* ImgLikeView.h */,
+				5A3ED1491FE22062002BE79D /* ImgLikeView.m */,
 				5A4FFD571FE12CB40043106A /* AppDelegate.h */,
 				5A4FFD581FE12CB40043106A /* AppDelegate.m */,
 				5A4FFD5A1FE12CB40043106A /* ViewController.h */,
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3ED14A1FE22062002BE79D /* ImgLikeView.m in Sources */,
 				5A4FFD891FE132A10043106A /* BaseLikeView.m in Sources */,
 				5A4FFD5C1FE12CB40043106A /* ViewController.m in Sources */,
 				5A4FFD591FE12CB40043106A /* AppDelegate.m in Sources */,
@@ -521,6 +527,7 @@
 				5A4FFD801FE12CB40043106A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A4FFD811FE12CB40043106A /* Build configuration list for PBXNativeTarget "LikeProTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +536,7 @@
 				5A4FFD831FE12CB40043106A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A4FFD841FE12CB40043106A /* Build configuration list for PBXNativeTarget "LikeProUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +545,7 @@
 				5A4FFD861FE12CB40043106A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

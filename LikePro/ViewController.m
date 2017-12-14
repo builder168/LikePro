@@ -1,7 +1,7 @@
 
 
 #import "ViewController.h"
-#import "BaseLikeView.h"
+#import "ImgLikeView.h"
 
 @interface ViewController ()<BaseLikeViewDelegate>
 
@@ -19,15 +19,15 @@
     CGFloat vx = 20;
     CGFloat vw = self.view.frame.size.width - 2*vx;
     //可通过继续BaseLikeView，实现内容多样化
-    BaseLikeView *likeView1 = [[BaseLikeView alloc] initWithFrame:CGRectMake(vx, 80, vw, vw) parentView:self.view];
+    ImgLikeView *likeView1 = [[ImgLikeView alloc] initWithFrame:CGRectMake(vx, 80, vw, vw) parentView:self.view];
     [self.view addSubview:likeView1];
     likeView1.delegate = self;
-    likeView1.backgroundColor = [UIColor redColor];
+    [likeView1 setImgName:@"1"];
     
-    BaseLikeView *likeView2 = [[BaseLikeView alloc] initWithFrame:CGRectMake(vx, 80, vw, vw) parentView:self.view];
+    ImgLikeView *likeView2 = [[ImgLikeView alloc] initWithFrame:CGRectMake(vx, 80, vw, vw) parentView:self.view];
     [self.view addSubview:likeView2];
     likeView2.delegate = self;
-    likeView2.backgroundColor = [UIColor blueColor];
+    [likeView2 setImgName:@"2"];
 
 }
 

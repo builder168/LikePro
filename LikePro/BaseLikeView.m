@@ -57,11 +57,13 @@
     {
         if (newCenter.x < center.x) {//左边
             if (newCenter.x > (center.x - 50)) {//移动距离没有超过界限
-                [self gestureFinishedWithIsBeyondBounds:NO];
+                [UIView animateWithDuration:0.15 animations:^{
+                    [self gestureFinishedWithIsBeyondBounds:NO];
+                }];
             }else{//移动距离超过界限
                 CGPoint dPoint = recognizer.view.center;
-                dPoint.x = dPoint.x - 80;
-                [UIView animateWithDuration:0.15 animations:^{
+                dPoint.x = dPoint.x - recognizer.view.frame.size.width;
+                [UIView animateWithDuration:0.35 animations:^{
                     recognizer.view.center = dPoint;
                     recognizer.view.transform = CGAffineTransformMakeRotation ([self getRotationDegreeWithAngle:-45]);
                 } completion:^(BOOL finished) {
@@ -70,11 +72,13 @@
             }
         }else if(newCenter.x > center.x){//右边
             if(newCenter.x < (center.x + 50)){//移动距离没有超过界限
-                [self gestureFinishedWithIsBeyondBounds:NO];
+                [UIView animateWithDuration:0.15 animations:^{
+                    [self gestureFinishedWithIsBeyondBounds:NO];
+                }];
             }else{//移动距离超过界限
                 CGPoint dPoint = recognizer.view.center;
-                dPoint.x = dPoint.x + 80;
-                [UIView animateWithDuration:0.15 animations:^{
+                dPoint.x = dPoint.x + recognizer.view.frame.size.width;
+                [UIView animateWithDuration:0.35 animations:^{
                     recognizer.view.center = dPoint;
                     recognizer.view.transform = CGAffineTransformMakeRotation ([self getRotationDegreeWithAngle:45]);
                 } completion:^(BOOL finished) {
@@ -100,11 +104,11 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 @end
